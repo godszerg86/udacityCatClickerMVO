@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selected {
+    color: red;
+}
+
+li,img,button {
+    cursor: pointer;
+}
+
+img {
+    width: 640px;
+    height: 420px;
+}
+
+.admin {
+    margin: 30px;
+    
+}
+
+.hide {
+    display: none;
+}

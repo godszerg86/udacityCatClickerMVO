@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <ol id="names-list">
+
+            </ol>
+        </div>
+        <div id="display">
+
+        </div>
+    </div>
+
+    <div class="add">
+        <p>Add new cat:</p>
+        <label for="cat-name">Cat name</label>
+        <input type="text" id="cat-name">
+        <label for="cat-url">Image URL</label>
+        <input type="text" id="cat-url">
+        <button id="my-button">ADD</button>
+
+    </div>
+
+    <div class="admin">
+        <button id="admin">ADMIN</button>
+        <div id="admin-panel" class="hide">
+            <label for="cat-name-admin">Current cat name</label>
+            <input type="text" id="cat-name-admin">
+            <label for="cat-url-admin">Current image URL</label>
+            <input type="text" id="cat-url-admin">
+            <label for="cat-clicks-admin">Clicks number</label>
+            <input type="text" id="cat-clicks-admin">
+            <button id="admin-save">SAVE</button>
+            <button id="admin-cancel">CANCEL</button>
+        </div>
+    </div>
+    <script src="js/catData.js"></script>
+    <script src="js/octo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
