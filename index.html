@@ -6,48 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/mustard-ui.min.css" />
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <div>
-            <ol id="names-list">
+    <div class="row">
+        <section class="section-secondary">
+            <div class="col col-lg-6 col-md-6">
+                <ol id="names-list">
 
-            </ol>
-        </div>
-        <div id="display">
+                </ol>
 
-        </div>
+            </div>
+            <div id="display">
+
+            </div>
+        </section>
     </div>
 
-    <div class="add">
-        <p>Add new cat:</p>
-        <label for="cat-name">Cat name</label>
-        <input type="text" id="cat-name">
-        <label for="cat-url">Image URL</label>
-        <input type="text" id="cat-url">
-        <button id="my-button">ADD</button>
-
-    </div>
-
-    <div class="admin">
-        <button id="admin">ADMIN</button>
-        <div id="admin-panel" class="hide">
-            <label for="cat-name-admin">Current cat name</label>
-            <input type="text" id="cat-name-admin">
-            <label for="cat-url-admin">Current image URL</label>
-            <input type="text" id="cat-url-admin">
-            <label for="cat-clicks-admin">Clicks number</label>
-            <input type="text" id="cat-clicks-admin">
-            <button id="admin-save">SAVE</button>
-            <button id="admin-cancel">CANCEL</button>
+    <div class="add row">
+        <p class="col">Add new cat:</p>
+        <div class="form-control col-lg-6 col-sm-12">
+            <label>Cat name</label>
+            <input type="text" id="cat-name">
         </div>
+        <div class="form-control col-lg-6 col-sm-12">
+            <label>Image URL</label>
+            <input type="text" id="cat-url">
+        </div>
+        <button id="my-button" class="button-primary">ADD</button>
+
     </div>
+
+
+    <footer>
+        <div class="row">
+            <button id="admin" class="button-info">ADMIN</button>
+        </div>
+    
+        <div class="row">
+            <div id="admin-panel" class="hide row">
+                <div class="form-control col-lg-3 col-md-3 col-sm-12">
+                    <label>Current cat name</label>
+                    <input type="text" id="cat-name-admin">
+                </div>
+                <div class="form-control col-lg-3 col-md-3 col-sm-12">
+                    <label>Current image URL</label>
+                    <input type="text" id="cat-url-admin">
+                </div>
+                <div class="form-control col-lg-3 col-md-3 col-sm-12">
+                    <label>Clicks number</label>
+                    <input type="text" id="cat-clicks-admin">
+                </div>
+    
+                <div class="row">
+                    <button id="admin-save" class="button-warning">SAVE</button>
+                    <button id="admin-cancel" class="button-danger">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </foote>
+
+
     <script src="js/catData.js"></script>
     <script src="js/octo.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
